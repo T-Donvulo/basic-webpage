@@ -8,14 +8,15 @@
 
     <style>
         /* .h1 { */
-            /* float: right; */
-            /* width: 25%; */
+        /* float: right; */
+        /* width: 25%; */
         /* } */
 
         .img1 {
             float: right;
-            padding-right: 600px;
+            padding-right: 5em;
         }
+
         .img2 {
             float: left;
             padding: 15px;
@@ -25,15 +26,28 @@
             overflow: auto;
         }
 
-        
+        .clearfix {
+            overflow: auto;
+        }
 
         .myCity {
-            
+
             width: 100%;
         }
-        
 
-     
+
+        .img2 {
+            float: right;
+        }
+
+        .img3 {
+            float: right;
+        }
+
+        .img4 {
+            float: right;
+        }
+
 
         table {
             border-collapse: collapse;
@@ -45,20 +59,49 @@
             border: 1px solid black;
         }
 
-        .frst { 
-            float:right;
-            overflow: auto;
+        .first {
+            border: 1px white solid;
+            float: right;
+            margin-right: 10px;
+
         }
 
+        .second {
+            border: 1px white solid;
+            float: right;
+            margin-right: 10px;
+        }
 
-        /* .myCity {
-            
-            /* float: left; */
-        /* display: flex; */
+        .three {
+            border: 1px white solid;
+            float: right;
+            margin-right: 10px;
+
+        }
+
+        .myCity {
+            /* border: 1px black solid; */
+            float: right;
+            display: flex;
+            margin: 25px 10px;
+        }
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media(min-width: 800px) {
+            .history {
+                display: flex;
+            }
+
+            .myCity {
+
+                width: 100%;
+            }
 
 
-
-     
+        }
     </style>
 
 </head>
@@ -67,43 +110,27 @@
     <div class="container">
         <div class="header">
             <img class="img1" src="first1.jpg" height="350px" width="250px">
-            <h1 class="name"><font size="100">Thato</font></h1>
-            <h1 class="name">
-                <font size="100">Donvulo</font>
-            </h1>
-       
+            <h1>Thato</h1>
+
+            <h1>Donvulo</h1>
         </div>
-        <!-- Section Two -->
+        <h1>My City</h1>
         <div class="myCity">
-            <img class="img2" src="https://placebear.com/250/250">
-            <h2>Bulawayo</h2>
+            <img src="bulawayo.jpg" style="padding-right:20px" padding-right>
             <p>It's high time we as Africans invested in our own continet, touring could be one of many ways of
-                doing
-                that.
-                We could get to go around, invest in our own continent, know it and know our brothers and sisters as
-                well
-                and their different types of culture as well. Africa is such an amazing and unique Continent, and
-                Bulawayo City
-                which has the great Victoria Falls, the biggest waterfall in the world. it is in between Zimbabwe
-                and
-                Zambia,
+                doing that. We could get to go around, invest in our own continent, know it and know our brothers
+                and sisters as well and their different types of culture as well. Africa is such an amazing and unique
+                Continent which needs to be explored, and Bulawayo City it might be what you need to see, it
+                has the great Victoria Falls, the biggest waterfall in the world. it is between Zimbabwe and Zambia.
                 it makes this roaring sound when water hits the ground,the people call it the smoke that thunders,
-                it's
-                such an amazing
-                place to be at. Bulawayo has many touring sides one could visit. I like the fact that Ndebele people
-                recided in
-                that side of Zimbabwe, I as a South African I would relate a lot with them mainly because of culture
-                and
-                where they originally come from before they migrated to Zimbabwe and places they have been before
-                settling down
-                in that side of the Country they got such a rich history, it's beautiful
+                it's such an amazing place to be at. Bulawayo has many touring sides one could visit. I like the fact
+                that Ndebele people recided in that side of Zimbabwe, I as a South African I would relate a lot with
+                them
+                mainly because of culture and where they originally came from before they migrated to Zimbabwe and
+                places they have been before settling down there in that side of the Country they got such a rich
+                history, it's beautiful
             </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse distinctio hic rem, illo ullam tempore consequuntur quo, accusantium necessitatibus autem velit debitis alias aperiam obcaecati veritatis? Est repellendus laudantium asperiores voluptatibus voluptate error dolor, temporibus ratione provident eligendi voluptatum, itaque eveniet placeat recusandae aspernatur eaque optio harum omnis at maxime necessitatibus eius sequi aperiam eos? Voluptate, cupiditate eligendi aperiam beatae amet ad omnis temporibus? Nobis ipsam aut quae praesentium atque eius deserunt! Sint nostrum voluptatibus dolores rem ducimus? Facilis, magni.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse distinctio hic rem, illo ullam tempore consequuntur quo, accusantium necessitatibus autem velit debitis alias aperiam obcaecati veritatis? Est repellendus laudantium asperiores voluptatibus voluptate error dolor, temporibus ratione provident eligendi voluptatum, itaque eveniet placeat recusandae aspernatur eaque optio harum omnis at maxime necessitatibus eius sequi aperiam eos? Voluptate, cupiditate eligendi aperiam beatae amet ad omnis temporibus? Nobis ipsam aut quae praesentium atque eius deserunt! Sint nostrum voluptatibus dolores rem ducimus? Facilis, magni.
-            </p>
+
         </div>
         <hr>
 
@@ -118,75 +145,98 @@
 
             <table border="1">
 
-
                 <tr>
                     <th>Swahili</th>
                     <th>English</th>
                 </tr>
+
                 <tr>
                     <td>Mimi huenda kufanya manunuzi</td>
                     <td>I go shopping</td>
                 </tr>
 
                 <tr>
-                <td>Yeye hukimbia</td>
-                <td>She runs</td>
+                    <td>Yeye hukimbia</td>
+                    <td>She runs</td>
                 </tr>
 
                 <tr>
                     <td>kutazama sinema</td>
                     <td>to watch a movie</td>
-                    </tr>
+                </tr>
 
-                    <tr>
-                        <td>Wewe huongea</td>
-                        <td>You say</td>
-                        </tr>
+                <tr>
+                    <td>Wewe huongea</td>
+                    <td>You say</td>
+                </tr>
 
             </table>
 
         </div>
 
+        <h3 align="center">Historic places</h3>
         <div class="history">
-            <h3 align="center">Historic places</h3>
-            <div class="first">
-                
-                <h3>Disctrict Six</h3>
+
+            <div class="first clearfix">
+                <div>
+                    <h3>Disctrict Six</h3>
+                </div>
+                <img class="img2" src="Webp.net-resizeimage.jpg" width=150px height=190px style="margin: 25px;">
                 <ul>
-                    <li>District Six Museum is a museum in the former inner-city residential area and,
-                         District Six, in Cape Town, South Africa in an old Methodist church.</li>
-                    <li>District Six Foundation was founded in 1989 and the museum in 1994, as a memorial
-                         to the forced movement of 60,000 inhabitants of various races in District Six during 
-                         Apartheid in South Africa in the 1970s.</li>
-                    <li>The floor of the museum is covered with a big map of the district with hand written notes 
-                        of former inhabitants, which indicate where their houses were located.</li>
-               </ul>     
-               <img class="frst" src="Webp.net-resizeimage.jpg">
+                    <li>District Six Museum is a museum in the former inner-city IN THE AREAOF HND
+
+                    <li>
+                        District Six IS THE Foundation was founded in 1989 and the museum in 1994, as a memorial
+                        to the forced movement of 60,000 inhabitants of various races in District Six during Apartheid
+                        in South Africa in the 1970s.
+                    </li>
+
+                    <li>
+                        The floor of the museum is covered with a big map of the district with hand written notes of
+                        former inhabitants, which indicate where their houses were located.
+                    </li>
+                </ul> ￼
             </div>
 
-            <div class="third">
-                <h3>Parliament of SA</h3>
-                <img src="yellowTop.jpg">
+
+
+
+            <div class="second">
+                <div>
+                    <h3>Parliament of SA</h3>
+                </div>
+                <img class="img3" src="yellowTop.jpg" width=150px height=190px style="margin: 25px;">
                 <ul>
-                    <li>The Parliament of South Africa is South Africa's legislature; under the present Constitution 
-                        of South Africa, the bicameral Parliament comprises a National Assembly and a National Council of Provinces</li>
+                    <li>The Parliament of South Africa is South Africa's legislature; under the present Constitution
+                        of South Africa, the bicameral Parliament comprises a National Assembly and a National Council
+                        of Provinces</li>
                     <li>he current twenty-seventh Parliament was first convened on 22 May 2019.</li>
-                    <li>From 1910 to 1994, members of Parliament were elected chiefly by the South African white minority. 
+                    <li>From 1910 to 1994, members of Parliament were elected chiefly by the South African white
+                        minority.
                         The first elections with universal suffrage were held in 1994.</li>
                 </ul>
             </div>
-            <div>
-                <h3>Castle of Good Hope</h3>
+
+
+            <div class="three">
+                <div>
+                    <h3>Castle of Good Hope</h3>
+                </div>
+                <img class="img4" src="last1.jpg" width=150px height=190px style="margin: 25px;">
+
                 <ul>
-                    <li>The Castle of Good Hope is known locally as "The Castle". Its Dutch name is "Kasteel de Goede Hoop" and 
+                    <li>The Castle of Good Hope is known locally as "The Castle". Its Dutch name is "Kasteel de Goede
+                        Hoop" and
                         is a bastion fort built in the 17th century in Cape Town, South Africa.</li>
-                    <li>The Castle was originally located on the coastline of Table Bay but, following reclamation, 
+                    <li>The Castle was originally located on the coastline of Table Bay but, following reclamation,
                         the fort is now located a short distance inland within the Central Business District.</li>
-                    <li>The Castle was declared a historical monument (now a provincial heritage site) in 1936. 
-                        Following restoration work in the 1980s, it is considered the best preserved example of a 17th century
-                         architectural structure in the entire world.</li>
+                    <li>The Castle was declared a historical monument (now a provincial heritage site) in 1936.
+                        Following restoration work in the 1980s, it is considered the best preserved example of a 17th
+                        century
+                        architectural structure in the entire world.</li>
                 </ul>
-                <img src="last1.jpg">
+
+
             </div>
         </div>
     </div>
